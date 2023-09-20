@@ -1,0 +1,113 @@
+*, html, body {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 7vh;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    background-color: rgb(255, 254, 254);
+}
+
+h1 {
+    margin-right: auto;
+    font-size: 32px;
+    margin-left: 10px;
+    color: rgb(149, 92, 92);
+    cursor: pointer;
+    padding: 8px;
+    transition: .5s ease-in-out;
+}
+
+h1:hover {
+    transform: scale(0.8);
+}
+
+.buttonArea {
+    margin-right: 20px;
+}
+
+button {
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-right: 5px;
+    color: rgb(255, 254, 254);
+    background-color: rgb(149, 92, 92);
+    transition: .5s ease-in-out;
+}
+
+button:hover {
+    background-color: rgb(255, 254, 254);
+    color: rgb(149, 92, 92);
+    border: 1px solid rgb(149, 92, 92);
+}
+
+section {
+    width: 100%;
+    height: 93vh;
+}
+
+.container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    height: inherit;
+    background-color: rgb(149, 92, 92);
+}
+
+table {
+    margin-bottom: 50px;
+    border: 1px solid rgb(255, 254, 254);
+}
+
+td {
+    border: 1px solid rgb(255, 254, 254);
+    padding: 50px;
+}
+
+.x, .o {
+    display: none;
+    position: absolute;
+    color: rgb(255, 254, 254);
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    font-weight: 200;
+}
+
+.hasil {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    border: 1px solid white;
+    text-align: center;
+    font-size: 80px;
+    width: 50%;
+    overflow: hidden;
+    color: #222;
+    padding: 20px;
+    animation: animasiHasil 1s ease-in-out;
+}
+
+@keyframes animasiHasil {
+    from {
+        width: 0;
+    } to {
+        width: 50%;
+    }
+}

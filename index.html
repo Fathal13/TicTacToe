@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Tic Tac Toe</h1>
+        <div class="buttonArea">
+          <button onclick="tryAgain()">Try Again</button>
+          <button onclick="singlePlayer()">Single Player</button>
+          <button onclick="multiPlayer()">Multi Player</button>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class="container">
+        <table cellspacing="0">
+          <tr>
+            <td class="kolom" id="0">
+              <p class="x">X</p>
+              <p class="o">O</p>
+            </td>
+            <td class="kolom" id="1">
+              <p class="x">X</p>
+              <p class="o">O</p>
+            </td>
+            <td class="kolom" id="2">
+              <p class="x">X</p>
+              <p class="o">O</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="kolom" id="3">
+              <p class="x">X</p>
+              <p class="o">O</p>
+            </td>
+            <td class="kolom" id="4">
+              <p class="x">X</p>
+              <p class="o">O</p>
+            </td>
+            <td class="kolom" id="5">
+              <p class="x">X</p>
+              <p class="o">O</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="kolom" id="6">
+              <p class="x">X</p>
+              <p class="o">O</p>
+            </td>
+            <td class="kolom" id="7">
+              <p class="x">X</p>
+              <p class="o">O</p>
+            </td>
+            <td class="kolom" id="8">
+              <p class="x">X</p>
+              <p class="o">O</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <p class="hasil"></p>
+    </section>
+
+    <!-- Ini Script -->
+    <script src="script.js"></script>
+    <!-- Script End -->
+  </body>
+</html>
